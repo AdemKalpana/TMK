@@ -7,7 +7,7 @@
 			<Label text="Emp Name"/>
 			<Input id="idEmpName" value="{/empStr/empName}" enabled="{/empStr/mario}" width="400px"/>
 			<Label text="Salary"/>
-			<Input id="idEmpSal" value="{/empStr/salary}" enabled="{/empStr/mario}" width="180px"/>
+			<Input id="idEmpSal" value="{/empStr/salary}" enabled="{= ${/empStr/empName} === 'Anubhav' ? false : true }" width="180px"/>
 			<Label text="Currency"/>
 			<Input id="idEmpCurr" value="{/empStr/currency}" enabled="{/empStr/mario}" width="120px"/>
 		</f:content>
